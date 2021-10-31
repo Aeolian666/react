@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const CourseListItem = ({ course }) => {
   const [studentsList, setStudentsList] = useState(null);
 
-  const GQL_API = `hhttps://gruesome-vault-83096.herokuapp.com/`;
+  const GQL_API = `https://gruesome-vault-83096.herokuapp.com/`;
   const GQL_QUERY = `
     query($id: ID!){
       course(id: $id){
