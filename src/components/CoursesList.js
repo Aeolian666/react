@@ -5,7 +5,7 @@ const CoursesList = () => {
   const [courses, setCourses] = useState(null);
 
   const fetchCourses = () => {
-    fetch("http://localhost:4000/v1/courses")
+    fetch("https://bloodcurdling-treat-72884.herokuapp.com/v1/courses")
       .then((response) => response.json())
       .then((result) => setCourses(result));
   };

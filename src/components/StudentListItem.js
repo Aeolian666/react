@@ -6,7 +6,7 @@ function StudentListItem({ id, name, onDeleteStudent }) {
   const [details, setDetails] = useState(null);
 
   function handleLoadDetails() {
-    fetch(`http://localhost:5000/v1/student/${id}`)
+    fetch(`https://evil-beast-90114.herokuapp.com/v1/student/${id}`)
       .then((response) => response.json())
       .then((response) => setDetails(response));
   }
